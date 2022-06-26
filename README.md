@@ -52,3 +52,11 @@
 2. Desabilite a verificação em 2 [etapas](https://support.google.com/accounts/answer/1064203?hl=pt-BR&co=GENIE.Platform%3DDesktop)
 3. Para enviar email em sua aplicação você precisa habilitar uma configuração de segurança no Gmail
    1. Habilitando aplicações menos Seguras no GMail[detalhes](https://support.google.com/accounts/answer/6010255?hl=pt).
+
+4. Devido atualizações de segurança do Google, não é mais possível utilizar a senha da conta para enviar emails.
+   Para continuar com o serviço de envio, devemos criar uma 'senha de App'.
+5. Para criar uma senha de App, devemos acessar https://myaccount.google.com/
+   1. Clicar na Aba 'Segurança'
+   2. Em "Como fazer login no Google", selecione Senhas de app. 
+      1. Obs. O login em duas etapas deve estar ativado para que seja possível criar senhas de Apps
+   3. Criar a senha de App com nome proprio. 

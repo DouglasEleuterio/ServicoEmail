@@ -1,10 +1,11 @@
-package br.com.feltex.enviaremail;
+package br.com.tresPtecnologia.enviaremail;
 
-import br.com.feltex.enviaremail.service.EnviaEmailService;
+import br.com.tresPtecnologia.enviaremail.service.EnviaEmailService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.core.io.ClassPathResource;
 
 import javax.mail.MessagingException;
 
@@ -24,10 +25,11 @@ public class ServicoEmail implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws MessagingException {
-        enviaEmailService.enviar("usuario2.feltex@gmail.com", "FELTEX - Serviço de Email",
-                "Conteúdo do email aqui!");
+        enviaEmailService.enviar("douglas.versato@gmail.com", "Serviço de E-mail",
+                "Email de teste!");
 
-        enviaEmailService.enviarEmailComAnexo("usuario2.feltex@gmail.com", "FELTEX - Serviço de Email. Anexo",
-                "Email com Anexo", "arquivos/basket.jpeg");
+
+        enviaEmailService.enviarEmailComAnexo("douglas.versato@gmail.com", "Serviço de E-mail com anexo",
+                "Email de teste!", new ClassPathResource("arquivos/basket.jpeg"), "Anexo1.jpeg");
     }
 }

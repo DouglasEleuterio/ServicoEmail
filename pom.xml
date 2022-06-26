@@ -8,11 +8,11 @@
         <version>2.6.2</version>
         <relativePath/>
     </parent>
-    <groupId>br.com.feltex</groupId>
+    <groupId>br.com.3ptecnologia</groupId>
     <artifactId>servico-email</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>ServicoEmail</name>
-    <description>Projeto Feltex</description>
+    <description>Serviço de Envio de Email através do Gmail</description>
     <properties>
         <java.version>11</java.version>
     </properties>
